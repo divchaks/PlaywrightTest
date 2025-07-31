@@ -1,8 +1,8 @@
 # Cross - skilling 
 
-This repository is created for the Cross-Skilling initiative led by QE. It serves as a learning ground for individuals who want to cross-skill themselves in automation tools.
+This repository is part of my personal learning journey as I focus on cross-skilling in automation tools. It was inspired by the QE-led Cross-Skilling initiative and serves as a structured space for me to explore, practice, and deepen my understanding of Playwright.
 
-The purpose of this repository is to host various examples and practice exercises as we move through different focus areas, progressively building expertise in each tool. Over time, this repo will evolve and expand, reflecting our learning journey and mastery of automation technologies.
+Here, I’ll be working through various test scenarios and practice exercises as I move through different focus areas and gradually building confidence and expertise in using Playwright. This repository will grow and evolve over time, reflecting both my progress and the skills I’m developing along the way.
 
 
 # Getting started 
