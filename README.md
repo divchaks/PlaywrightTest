@@ -27,6 +27,9 @@ npm init playwright@latest
 | **With debug**    | `PWDEBUG=1 npx playwright test`             | Runs tests in debug mode with step-by-step control          |
 | **Headed mode**   | `npx playwright test --headed`              | Runs tests in a visible browser window (not headless)       |
 
+### Step 3: Customize Test Settings 
+You can modify the playwright.config.js file to set global options like timeouts, retries, headless mode, screenshots, and more.
+
 
 
 
