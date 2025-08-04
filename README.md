@@ -6,42 +6,146 @@ Here, I’ll be working through various test scenarios and practice exercises as
 
 
 
+To set up playwright ,first we have check if have node.js installed. You can check whether Node.js and npm are already installed by running the following command in your terminal:
+
+```bash
+
+npm -v
+```
+If it's installed, you’ll see a version number like:
+
+```bash
+
+10.2.0
+```
+To check the Node.js version specifically:
+
+```bash
+
+node -v
+```
+
+#### How to Install Node.js
+Go to the official Node.js website:
+https://nodejs.org/
+
+Download the LTS (Long Term Support) version for your operating system (Windows, macOS, or Linux).
+
+LTS is more stable and preferred for most projects.
+
+Run the installer and follow the instructions. It will install both node and npm.
+
+After installation is complete, restart your terminal and verify the installation:
+
+```bash
+
+node -v
+npm -v
+```
+You should now see version numbers for both.
+
+
+
+
+
 ## Cloning the Project and Running Playwright Tests Locally
 Before you can run Playwright tests, you need to get a copy of the project on your local machine. This means cloning the repository from GitHub and setting up your environment.
 
 
 ### Create a Folder and Clone the Repository
-First, choose where you want to keep the project. You can create a folder for your projects like this:
+Before running any Playwright tests, you first need to clone the test project repository onto your local machine. Here’s how you can do that step-by-step.
+
+🔹 Step 1: Open Terminal / Command Line
+First, open a terminal or command prompt on your machine.
+
+On Windows, you can use Git Bash, Command Prompt, or PowerShell
+
+On macOS or Linux, use the Terminal app
+
+🔹 Step 2: Navigate to Your Preferred Directory
+Use the cd (change directory) command to move into the folder where you want to keep all your Playwright projects.
+
+For example, to go into your Documents folder:
+
+```bash
+
+cd Documents
+```
+
+
+🔹 Step 3: Create a Folder for the Project
+Now create a new folder named Playwright using the mkdir (make directory) command:
 
 ```bash
 
 mkdir Playwright
-cd Playwright
 ```
+This command creates a new folder called Playwright in your current directory.
 
-Now, clone the Playwright test project into that folder using:
+Next, move into the new folder:
 
 ```bash
-cd playwright
-git clone https://github.com/your-username/your-playwright-repo.git
+
+cd Playwright
 ```
+🔹 Step 4: Clone the Git Repository
+Now that you're in the right place, use git clone to copy the Playwright test project from GitHub to your local machine:
 
+```bash
 
-After this step, the project will be on your local machine inside the your-playwright-repo folder.
+git clone https://github.com/your-username/your-playwright-repo.git
 
+```
+✅ Replace https://github.com/your-username/your-playwright-repo.git with the actual URL of your GitHub repository.
 
-### Install Dependencies
-Once you’re inside the project folder, install the required Node.js dependencies:
+This will:
+
+Create a new folder named after your repo (e.g. your-playwright-repo)
+
+Download all the files, test scripts, and Git history into that folder
+
+ Step 5: Move Into the Project Folder
+Once cloned, change into the project directory like this:
+
+```bash
+
+cd your-playwright-repo
+```
+You are now inside the Playwright test project directory and ready to set it up!
+
+### How to Run Playwright Tests After Cloning the Repo
+Once you’ve cloned the repository to your local machine and installed the dependencies, you’re ready to run the Playwright tests. Here’s how you can do that step-by-step:
+
+🔹 Step 1: Navigate to the Project Directory
+First, open your terminal and move into the folder where the cloned project lives. For example:
+
+```bash
+
+cd Documents/Playwright/your-playwright-repo
+```
+Make sure you’re inside the root of the Playwright project where the package.json and playwright.config.ts files are located.
+
+🔹 Step 2: Install Project Dependencies
+Before running any tests, install the required packages listed in the project’s package.json:
 
 ```bash
 
 npm install
 ```
-This command will:
+This command installs all the  dependencies your test project needs
 
-Create a node_modules/ folder with all required packages
+It also sets up the node_modules/ folder
 
-Set up any testing tools or utilities that are already listed in package.json
+🔹 Step 3: Install Playwright Browsers
+Playwright uses its own version of Chromium, Firefox, and WebKit for consistent automation. Install them with:
+
+```bash
+
+npx playwright install
+```
+This will download the browser binaries and store them locally in the .playwright/ directory.
+
+
 
 
 
