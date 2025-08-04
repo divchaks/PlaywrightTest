@@ -5,13 +5,53 @@ This repository is part of my personal learning journey as I focus on cross-skil
 Here, I’ll be working through various test scenarios and practice exercises as I move through different focus areas and gradually building confidence and expertise in using Playwright. This repository will grow and evolve over time, reflecting both my progress and the skills I’m developing along the way.
 
 
+
+## Cloning the Project and Running Playwright Tests Locally
+Before you can run Playwright tests, you need to get a copy of the project on your local machine. This means cloning the repository from GitHub and setting up your environment.
+
+
+### Create a Folder and Clone the Repository
+First, choose where you want to keep the project. You can create a folder for your projects like this:
+
+```bash
+
+mkdir Playwright
+cd Playwright
+```
+
+Now, clone the Playwright test project into that folder using:
+
+```bash
+cd playwright
+git clone https://github.com/your-username/your-playwright-repo.git
+```
+
+
+After this step, the project will be on your local machine inside the your-playwright-repo folder.
+
+
+### Install Dependencies
+Once you’re inside the project folder, install the required Node.js dependencies:
+
+```bash
+
+npm install
+```
+This command will:
+
+Create a node_modules/ folder with all required packages
+
+Set up any testing tools or utilities that are already listed in package.json
+
+
+
 ##  Setting Up Playwright and Running Tests
 
 This section outlines how to install Playwright, set up the environment, and run tests in various modes.
 
 ### Install Playwright and Dependencies
 
-Use the official Playwright initializer to quickly set up your project:
+Login into VSTS and open the project folder where you have cloned the repo.Using the terminal type the comman below to set up Playwright 
 
 ```bash
 npm init playwright@latest
