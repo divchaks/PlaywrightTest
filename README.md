@@ -9,26 +9,59 @@ Here, I’ll be working through various test scenarios and practice exercises as
 
 This section outlines how to install Playwright, set up the environment, and run tests in various modes.
 
-### Step 1: Install Playwright and Dependencies
+### Install Playwright and Dependencies
 
 Use the official Playwright initializer to quickly set up your project:
 
 ```bash
 npm init playwright@latest
 ```
-### Step 2 :Running the test 
+###  Running Tests
+You can run your tests in different modes depending on whether you're debugging locally or running in CI (Continuous Integration).
 
-| Mode              | Command                                     | Description                                                 |
-| ----------------- | ------------------------------------------- | ----------------------------------------------------------- |
-| **Default**       | `npx playwright test`                       | Runs all test files in the project                          |
-| **Specific file** | `npx playwright test tests/example.spec.js` | Runs a single test file                                     |
-| **UI mode**       | `npx playwright test --ui`                  | Launches a test runner UI to visually explore and run tests |
-| **With report**   | `npx playwright show-report`                | Opens an HTML report after tests complete                   |
-| **With debug**    | `PWDEBUG=1 npx playwright test`             | Runs tests in debug mode with step-by-step control          |
-| **Headed mode**   | `npx playwright test --headed`              | Runs tests in a visible browser window (not headless)       |
+#### Run all tests in headless mode (default)
+```bash
+
+npx playwright test
+```
+
+#### Run tests in headed mode (browser visible)
+```bash
+
+npx playwright test --headed
+````
+
+
+#### Run a single test file
+
+```bash
+
+npx playwright test tests/example.spec.js
+```
+
+
+#### Run tests using the Playwright Test UI
+
+```bash
+
+npx playwright test --ui
+```
+
+
+#### View the HTML test report
+After running tests, Opens a full HTML report with test results, screenshots, and video recordings (if enabled).
+
+```bash
+
+npx playwright show-report
+```
+
 
 ### Step 3: Customize Test Settings 
 You can modify the playwright.config.js file to set global options like timeouts, retries, headless mode, screenshots, and more.
+
+
+## Working with Git hub 
 
 
 
