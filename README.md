@@ -90,7 +90,7 @@ Now that you're in the right place, use git clone to copy the Playwright test pr
 
 ```bash
 
-git clone https://github.com/your-username/your-playwright-repo.git
+git clone https://github.com/divchaks/Cross-Skilling-Playwright.git
 
 ```
 
@@ -230,7 +230,7 @@ Add the GitHub repository URL as the remote called origin:
 
 ```bash
 
-git remote add origin https://github.com/your-username/your-repo.git
+git remote add origin https://github.com/divchaks/Cross-Skilling-Playwright.git
 ```
 Replace the URL with your actual GitHub repo URL.
 
